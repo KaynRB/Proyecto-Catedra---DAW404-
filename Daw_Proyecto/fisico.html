@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendaciones de Ejercicio</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style2.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/fisico.css">
+</head>
+
+<body>
+    <div class="hero_area" style="height: 330px; margin-bottom: 60px;" >
+        <header class="header_section">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+                    <a class="navbar-brand gym-logo" href="index.html">
+                        <i class="fas fa-dumbbell icon"></i>
+                        Salud y Ejercicio
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Inicio </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Datos.html"> Datos </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Ejercicios.html"> Ejercicios </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Cuenta.html"> Cuenta </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Contactanos.html">Contactanos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <section id="cardio" style="padding: 25px;">
+        <h2 class="section-title">Caminatas diarias y ejercicios cardiovasculares ligeros</h2>
+        <i class="fas fa-walking icon"></i>
+        <p>
+            Para mejorar tu salud cardiovascular, se recomienda realizar caminatas diarias y ejercicios cardiovasculares ligeros.
+            Ejemplos de ejercicios cardiovasculares incluyen correr, andar en bicicleta, nadar o saltar la cuerda.
+            Asegúrate de comenzar con intensidad moderada y aumentar gradualmente la duración y la intensidad.
+        </p>
+    </section>
+
+    <section id="consulta-profesional" style="padding: 25px;">
+        <h2 class="section-title">Consulta con un profesional para obtener recomendaciones personalizadas</h2>
+        <i class="fas fa-user-md icon"></i>
+        <p>
+            Antes de iniciar cualquier programa de ejercicios, es recomendable consultar con un profesional de la salud o un entrenador personal.
+            Cada persona tiene necesidades y condiciones físicas únicas, y un profesional puede proporcionar recomendaciones personalizadas
+            teniendo en cuenta tu situación específica.
+        </p>
+    </section>
+
+    <section id="fuerza" style="padding: 25px;">
+        <h2 class="section-title">Entrenamiento de fuerza intenso y dieta rica en proteínas</h2>
+        <i class="fas fa-dumbbell icon"></i>
+        <p>
+            Si tu objetivo es ganar masa muscular, el entrenamiento de fuerza es esencial. Incorpora ejercicios de levantamiento de pesas
+            como sentadillas, press de banca y peso muerto. Además, asegúrate de mantener una dieta equilibrada y rica en proteínas,
+            ya que las proteínas son fundamentales para el crecimiento muscular y la recuperación.
+        </p>
+        <h3 class="section-title" style="padding-top: 25px;">Ejercicios por Nivel</h3>
+        <!-- Agregamos un botón de selección de nivel usando Bootstrap -->
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-secondary" onclick="mostrarEjercicios('principiante')">Principiante</button>
+            <button type="button" class="btn btn-secondary" onclick="mostrarEjercicios('intermedio')">Intermedio</button>
+            <button type="button" class="btn btn-secondary" onclick="mostrarEjercicios('avanzado')">Avanzado</button>
+        </div>
+        <div id="ejercicios-container"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Salud y Ejercicio</p>
+    </footer>
+
+    <!-- Agregamos los scripts de Bootstrap y nuestro script personalizado -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="js/fisico.js"> </script>
+</body>
+
+</html>
